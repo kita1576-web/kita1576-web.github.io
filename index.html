@@ -241,37 +241,125 @@
     font-size: 0.775rem; font-weight: 500;
   }
 
-  /* ── PROJECTS ── */
-  #projects { background: var(--white); }
-  .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.8rem; }
-  .project-card {
-    background: var(--card-bg); border-radius: 16px;
-    border: 1px solid var(--border); overflow: hidden;
-    transition: transform 0.25s, box-shadow 0.25s;
-    display: flex; flex-direction: column;
-  }
-  .project-card:hover { transform: translateY(-5px); box-shadow: 0 16px 48px rgba(13,27,46,0.1); }
-  .project-header {
-    background: linear-gradient(135deg, var(--navy), var(--navy-light));
-    padding: 1.8rem; display: flex; align-items: center; gap: 1rem;
-  }
-  .project-icon { font-size: 1.8rem; }
-  .project-header h3 { color: #fff; font-size: 1rem; font-weight: 600; }
-  .project-header p { color: rgba(255,255,255,0.55); font-size: 0.8rem; margin-top: 0.2rem; }
-  .project-body { padding: 1.5rem; flex: 1; display: flex; flex-direction: column; gap: 1rem; }
-  .project-body p { font-size: 0.9rem; color: #5a6879; line-height: 1.7; flex: 1; }
-  .project-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
-  .project-tag {
-    background: #f0f4f9; color: #4a6080;
-    border-radius: 4px; padding: 0.2rem 0.6rem; font-size: 0.75rem; font-weight: 500;
-  }
-  .project-link {
-    display: inline-flex; align-items: center; gap: 0.4rem;
-    color: var(--accent); font-size: 0.85rem; font-weight: 600;
-    text-decoration: none; padding-top: 0.5rem;
-    border-top: 1px solid var(--border); transition: gap 0.2s;
-  }
-  .project-link:hover { gap: 0.7rem; }
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-inner">
+    <div class="section-label">Portfolio</div>
+    <h2 class="section-title">Projects & Samples</h2>
+    <div class="section-divider"></div>
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-icon">🔍</div>
+          <div>
+            <h3>Security Audit Report</h3>
+            <p>Risk Assessment & Compliance</p>
+          </div>
+        </div>
+        <div class="project-body">
+          <p>Comprehensive security audit identifying vulnerabilities and recommending remediation aligned with NIST CSF.</p>
+          <div class="project-tags">
+            <span class="project-tag">NIST CSF</span>
+            <span class="project-tag">Risk Assessment</span>
+          </div>
+          <a href="Security%20audit%20report.docx" class="project-link">View Report →</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-icon">📡</div>
+          <div>
+            <h3>Network Traffic Analysis</h3>
+            <p>Packet Analysis & Detection</p>
+          </div>
+        </div>
+        <div class="project-body">
+          <p>Analyzed network traffic using Wireshark and tcpdump to identify suspicious activity patterns.</p>
+          <div class="project-tags">
+            <span class="project-tag">Wireshark</span>
+            <span class="project-tag">tcpdump</span>
+          </div>
+          <a href="Network%20Traffic%20Analysis" class="project-link">View Details →</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-icon">🐍</div>
+          <div>
+            <h3>Python Security Script</h3>
+            <p>Automation & Scripting</p>
+          </div>
+        </div>
+        <div class="project-body">
+          <p>Python automation script demonstrating security-focused programming and system administration.</p>
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">Automation</span>
+          </div>
+          <a href="python%20exercise.docx" class="project-link">View Code →</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-icon">🖥️</div>
+          <div>
+            <h3>Linux Administration</h3>
+            <p>System Hardening & Security</p>
+          </div>
+        </div>
+        <div class="project-body">
+          <p>Documentation of essential Linux commands and best practices for system security hardening.</p>
+          <div class="project-tags">
+            <span class="project-tag">Linux</span>
+            <span class="project-tag">CLI</span>
+          </div>
+          <a href="Linux.pdf" class="project-link">View Guide →</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-icon">📋</div>
+          <div>
+            <h3>Incident Response Journal</h3>
+            <p>Case Study & Documentation</p>
+          </div>
+        </div>
+        <div class="project-body">
+          <p>Documented incident response procedures with case studies demonstrating detection and remediation.</p>
+          <div class="project-tags">
+            <span class="project-tag">Incident Response</span>
+            <span class="project-tag">Documentation</span>
+          </div>
+          <a href="Incident%20handler%20journal.docx" class="project-link">View Journal →</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-icon">📊</div>
+          <div>
+            <h3>SQL Data Filtering</h3>
+            <p>Query Analysis & Data Security</p>
+          </div>
+        </div>
+        <div class="project-body">
+          <p>Applied SQL filtering techniques to retrieve and analyze security-relevant data efficiently.</p>
+          <div class="project-tags">
+            <span class="project-tag">SQL</span>
+            <span class="project-tag">Queries</span>
+          </div>
+          <a href="Apply%20filters%20SQL.png" class="project-link">View Screenshot →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  
 
   /* ── CERTS ── */
   #certifications { background: #f2f6fc; }
