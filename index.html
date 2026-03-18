@@ -3,27 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cybersecurity Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <title>Cybersecurity Portfolio</title>
 </head>
 <body>
-    <header>
-        <h1>Cybersecurity Portfolio</h1>
-        <button id="get-in-touch">Get In Touch</button>
-    </header>
-    <main>
-        <h2>Projects</h2>
+
+    <nav>
+        <h1>My Cybersecurity Portfolio</h1>
         <ul>
-            <li><a href="Security Audit Report.docx">Security Audit Report</a></li>
-            <li><a href="Network Traffic Analysis.docx">Network Traffic Analysis</a></li>
-            <li><a href="python exercise.docx">Python Exercise</a></li>
-            <li><a href="Linux.pdf">Linux Documentation</a></li>
-            <li><a href="Incident Handler Journal.docx">Incident Handler Journal</a></li>
-            <li><a href="Apply filters SQL.png">Apply Filters in SQL</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Get In Touch</a></li>
         </ul>
-    </main>
-    <footer>
-        <p>&copy; 2026 Cybersecurity Portfolio</p>
+    </nav>
+
+    <header class="hero">
+        <section class="shield-animation">
+            <h2>Welcome to My Portfolio</h2>
+        </section>
+    </header>
+
+    <section id="about">
+        <div class="profile-card">
+            <h3>About Me</h3>
+            <p>Passionate about cybersecurity...</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h3>My Skills</h3>
+        <div class="skills-grid">
+            <div class="skill-category">Category 1</div>
+            <div class="skill-category">Category 2</div>
+            <div class="skill-category">Category 3</div>
+            <div class="skill-category">Category 4</div>
+            <div class="skill-category">Category 5</div>
+            <div class="skill-category">Category 6</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h3>Projects</h3>
+        <div class="project-card">Security Audit Report.docx</div>
+        <div class="project-card">Network Traffic Analysis.docx</div>
+        <div class="project-card">python exercise.docx</div>
+        <div class="project-card">Linux.pdf</div>
+        <div class="project-card">Incident Handler Journal.docx</div>
+        <div class="project-card">Apply filters SQL.png</div>
+    </section>
+
+    <section id="certifications">
+        <h3>Certifications</h3>
+        <p>Details of certifications...</p>
+    </section>
+
+    <footer id="contact">
+        <h3>Contact Me</h3>
+        <p>Feel free to reach out!</p>
     </footer>
+
 </body>
 </html>
